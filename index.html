@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aniket Agrawal</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="header">
+          	<a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+    	    <a href="#work">WORK</a>
+        	<a href="#section3">CONTACT</a>
+        </div>
+    </header>
+    <ul class="pscroll">
+        <a href="#section1"><li class="scroll" id="idscroll1" style="width: 30px;"></li></a>
+        <a href="#about"><li class="scroll" id="idscroll2"> </li></a>
+        <a href="#section3"><li  class="scroll" id="idscroll3"></li></a>
+    </ul>
+    <div class="container">
+        <div class="child" id="section1">
+        	<div class="bg_img"></div>
+			<div class="name"><h1 style="font-size: 80px;">Hello!</h1><br><h3>I'm Aniket Agrawal</h3><br><h6 style="text-align: center;">CAD | CAE</h6><br><h6 style="text-align: right;">3rd Year Mechanical Engineer Student</h6></div>
+			<div class="bouncebutton">
+				<a class="arrow" href="#about"><img src="arrow.png"></a>
+			</div>
+		</div>
+		<div id="about">
+			<div class="about_me"><h2>About Me</h2></div>
+			<div class="about_para">
+			<p>I am a 20 year old student currently in 3rd year of BTech in Mechanical engineering at LNM Institute of Information Technology, Jaipur. I specialize in Fusion 360 & solidworks for cad modeling. I also expertise in ansys, matlab for CAE simulations. I have keen interest in designing and analyzing the product.</p>
+			</div>
+		</div>
+		<div id="work">
+			<h2>Projects</h2>
+			<div class="project">
+				<div class="bicycle" onclick="location.href='bike.html'" >
+					<img src="Bike.png">
+					<div class="middle"><h2>Hubless Bicycle</h2></div>
+				</div>
+			</div>
+		</div>
+        <div id="section3">
+        <div class="contact">
+        	<h1>Get in Touch</h1>
+        	<form action="https://formspree.io/f/mnqokjwd" method="POST">
+				<input type="text" placeholder="Your Name:" required="" name="Name">
+				<input type="email" placeholder="Your Email:" required="" name="_replyto">
+				<textarea placeholder="Enter your message here:" spellcheck="true" name="message"></textarea>
+
+				<button class="submit" type="submit">Send</button>
+			</form>
+		</div>
+        </div>
+    </div>
+    <footer>
+    	<a class="icon" href="https://www.facebook.com/aniket.agrawal.562114"><img src="facebook.png"></a>
+        <a class="icon" href="https://www.linkedin.com/in/aniket-agrawal-2b8a3716b/" ><img src="linkedin.png"></a>
+        <a class="icon" href="https://www.instagram.com/aniket._.agrawal/" ><img src="instagram.png"></a>
+        <a class="uparrow" href="#header"><img src="uparrow.png"></a>
+    </footer>
+    <script>
+    	window.onscroll = function() {pop()};
+    	function pop() {
+            var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+            if (scroll > 0 && scroll < 730) {
+            	document.getElementById("idscroll1").style.width = "30px";
+                document.getElementById("idscroll2").style.width = "12px";
+                document.getElementById("idscroll3").style.width = "12px";
+          	}
+        	else{if (scroll > 740 && scroll < 1470) {
+            	document.getElementById("idscroll2").style.width = "30px";
+            	document.getElementById("idscroll1").style.width = "12px";
+            	document.getElementById("idscroll3").style.width = "12px";
+                }
+            else{if (scroll > 1470 && scroll < 2190) {
+            	document.getElementById("idscroll2").style.width = "12px";
+            	document.getElementById("idscroll3").style.width = "30px";
+                document.getElementById("idscroll1").style.width = "12px";
+          		}
+            }
+            }
+        }
+    </script>
+</body>
+</html>
