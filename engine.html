@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V6 Engine</title>
+	<style type="text/css">
+		body{
+				margin: 0;
+				padding: 0;
+			}
+			h1{
+				position: relative;
+				padding: 30px 0px 0px 0px;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 40px;
+				font-family: sans-serif;
+				font-weight: 500;
+			}
+			.myslide{
+				padding: 30px 0px;
+				width: 100%;
+				height: 485px;
+				border: none;
+			}
+			img{
+				width: 800px;
+				margin: 0px auto;
+			}
+			.para{
+			position: relative;
+			margin: 0;
+			font-size: 18px;
+			font-family: sans-serif;
+			padding: 0px 15%;
+			width: 70%;
+			left: 50%;
+			transform: translateX(-50%);
+			}
+			p{
+				display: block;
+			}
+	</style>
+</head>
+<body>
+	<h1>V6 SI Engine</h1>
+	<div class="myslide">
+		<img class="slide" src="engine_1.png">
+		<img class="slide" src="engine_2.png">
+		<img class="slide" src="engine_3.png">
+		<img class="slide" src="engine_4.png">
+		<img class="slide" src="engine_5.png">
+		<img class="slide" src="engine_6.png">
+	</div>
+	<div class="para">
+		<p>
+			In my 1st year, I am very curious about how engine works and wanted to get the knowledge about it. So, I model a V6 SI engine in Solidworks. By modelling V6 engine in solidworks, I got knowledge about engine and got some good experience in solidworks. 
+		</p>
+	</div>
+
+	<script type="text/javascript">
+		var myIndex = 0;
+		myfunction();
+		function myfunction(){
+			var i;
+			var x = document.getElementsByClassName("slide");
+			for(i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if(myIndex>x.length){
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(myfunction,2000);
+		}
+	</script>
+</body>
+</html>
