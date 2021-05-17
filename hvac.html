@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HVAC</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.para{
+			position: relative;
+			margin: 0;
+			font-size: 18px;
+			font-family: sans-serif;
+			padding: 0px 15%;
+			width: 70%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		h1{
+			position: relative;
+			padding: 30px 0px 0px 0px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 40px;
+			font-family: sans-serif;
+			font-weight: 500;
+		}
+		p{
+			display: block;
+		}
+		figcaption{
+			text-align: center;
+		}
+		img, video{
+			padding: 30px 0px 0px 30px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>HVAC</h1>
+	<div class="para">	
+		<video width="900px" autoplay muted controls><source src="Room_AC_pathline_animation.mp4" type="video/mp4"></video>
+		<p>HVAC simulation is done in Ansys to understand the airflow inside the room and quantify the temperature of room. In this simulation, hot air inside the room is vented out of the room and is replaced by cooler air from the air-conditioning unit. The injected cooler air exchanges heat energy with the room walls and other heat-generating sources present in the room, which increases the air temperature. The hot air is then expelled from the room and is again replaced by cooler air-conditioned air. In this simulation one door and one window is assumed in the room.</p>
+		<img width="60%" src="HVAC_3dmodel.png">
+		<figcaption>3d Model of room</figcaption>
+		<img width="40%" src="AC_model.png">
+		<figcaption>3d Model of AC</figcaption>
+		<p>Here red one is outlet and blue one is inlet.</p>
+		<p>Room Dimension - 6m x 4.5m x 3m<br>Window Dimension - 1.5m x 1m<br>Door Dimension - 1.15m x 2m<br>Working fluid in this simulation is air.<br>Cool air enter the room from the inlet at the mass flow rate of 0.15 kg/s and temperature of 293 K. Warm air leaves is sucked out of the room through the outlet at the same flow rate of 0.15 kg/s.<br>At side walls and top walls of room no-slip condition is provided and convective heat transfer coefficient of 5W/(&#13217;.K) is considered at temperature of 313 K. At Door and windows no-slip condition is provided and convective heat transfer coefficient of 10W/(&#13217;.K) is considered at temperature of 313 K. At the floor heat flux of 0 is assumed. SST k - omega model is choosen for simulation.</p>
+		<figure>
+		<img width="60%" src="temp_contour.png">
+		<figcaption>Temperature contours at side walls, door and window</figcaption>
+		<img width="60%" src="temp_hvac.png">
+		<figcaption>Temperature contours at x = -4m and y = 2.25m</figcaption>
+		</figure>
+		<img width="60%" src="velocity_contour.png">
+		<figcaption>velocity contour at x = -4m</figcaption>
+	</div>
+</body>
+</html>

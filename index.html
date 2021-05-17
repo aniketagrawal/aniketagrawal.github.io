@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aniket Agrawal</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="mobhead">
+        <a class="openbtn" onclick="opennav()">☰ </a>
+    </div>
+	<header id="header">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div id="menu">
+          	<a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+    	    <a href="#work">WORK</a>
+        	<a href="#section3">CONTACT</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="child" id="section1">
+        	<div class="bg_img"></div>
+			<div class="name"><h1>Hello!</h1><h3>I'm Aniket Agrawal</h3><h6>3rd Year Mechanical Engineer Student</h6><h5 style="text-align: center;">CAD | CAE</h5></div>
+			<div class="bouncebutton">
+				<a class="arrow" href="#about"><img src="arrow.png"></a>
+			</div>
+		</div>
+		<div id="about">
+			<div class="about_me"><h2>About Me</h2></div>
+			<div class="about_para">
+			<p>I am a 20-year-old student currently in my 3rd year of BTech in Mechanical engineering at LNM Institute of Information Technology, Jaipur. I learned Fusion 360 & Solidworks for CAD modeling in my 1st year, and ever since, I have a keen interest in designing and analyzing the product. I also have knowledge in Ansys, Matlab for CAE simulations. I hope in the near future, I apply my CAD, CAE skills to design a better product.</p>
+			<div class="resume" onclick="window.open('https://drive.google.com/file/d/1cWudzBEXYCtKTPUisZIn3ClAs9eNUqjz/view?usp=sharing', '_blank')">Download Resume</div>
+			</div>
+
+		</div>
+		<div id="work">
+			<h2>Projects</h2>
+			<div class="project">
+				<div class="hpvc" onclick="window.open('hpvc.html', '_blank')" >
+					<img src="HPV.png">
+					<div class="middle"><h2>HPVC</h2></div>
+				</div>
+				<div class="bicycle" onclick="window.open('bike.html', '_blank')" >
+					<img src="Bike.png">
+					<div class="middle"><h2>Hubless Bicycle</h2></div>
+				</div>
+				<div class="engine" onclick="window.open('engine.html', '_blank')" >
+					<img src="engine.png">
+					<div class="middle"><h2>V6 SI Engine</h2></div>
+				</div>
+				<div class="Wheel">
+					<img src="Car_Wheel.png">
+					<div class="middle"><h2>Car Wheel</h2></div>
+				</div>
+				<div class="HVAC" onclick="window.open('hvac.html', '_blank')" >
+					<img src="AC.jpg">
+					<div class="middle"><h2>HVAC</h2></div>
+				</div>
+				<div class="Watch" onclick="window.open('watch.html', '_blank')" >
+					<img src="Watch.png">
+					<div class="middle"><h2>Wrist Watch</h2></div>
+				</div>
+			</div>
+		</div>
+        <div id="section3">
+        <div class="contact">
+        	<h1>Get in Touch</h1>
+        	<form action="https://formspree.io/f/mnqokjwd" method="POST">
+				<input type="text" placeholder="Your Name:" required="" name="Name">
+				<input type="email" placeholder="Your Email:" required="" name="_replyto">
+				<textarea placeholder="Enter your message here:" spellcheck="true" name="message"></textarea>
+
+				<button class="submit" type="submit">Send</button>
+			</form>
+		</div>
+        </div>
+    </div>
+    <footer>
+    	<a class="icon" href="https://www.facebook.com/aniket.agrawal.562114"><img src="facebook.png"></a>
+        <a class="icon" href="https://www.linkedin.com/in/aniket-agrawal-2b8a3716b/" ><img src="linkedin.png"></a>
+        <a class="icon" href="https://www.instagram.com/aniket._.agrawal/" ><img src="instagram.png"></a>
+        <a class="uparrow" href="#section1"><img src="uparrow.png"></a>
+    </footer>
+    <script>
+    	function opennav(){
+    		document.getElementById("header").style.width = "100%";
+    		document.getElementById("menu").style.display = "block";
+    	}
+    	function closeNav(){
+    		document.getElementById("header").style.width = "0%";
+    		document.getElementById("menu").style.display = "none";
+    	}
+    </script>
+</body>
+</html>

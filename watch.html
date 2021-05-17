@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wrist Watch</title>
+	<style type="text/css">
+		body{
+				margin: 0;
+				padding: 0;
+			}
+			h1{
+				position: relative;
+				padding: 30px 0px 0px 0px;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 40px;
+				font-family: sans-serif;
+				font-weight: 500;
+			}
+			.myslide{
+				padding: 30px 0px;
+				width: 100%;
+				height: 485px;
+				border: none;
+			}
+			img{
+				width: 800px;
+				margin: 0px auto;
+			}
+	</style>
+</head>
+<body>
+	<h1>Wrist Watch</h1>
+	<div class="myslide">
+		<img class="slide" src="Watchv19copy.png">
+		<img class="slide" src="Watchv19.png">
+		<img class="slide" src="Watchv22.png">
+		<img class="slide" src="Watchv24.png">
+		<img class="slide" src="Watchv27.png">
+		<img class="slide" src="Watchv6.png">
+		<img class="slide" src="Watchrender.png">
+		<img class="slide" src="Watchkeyshot.jpg">
+		<img class="slide" src="Watchv31.png">
+		<img class="slide" src="Watchv37.png">
+	</div>
+
+	<script type="text/javascript">
+		var myIndex = 0;
+		myfunction();
+		function myfunction(){
+			var i;
+			var x = document.getElementsByClassName("slide");
+			for(i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if(myIndex>x.length){
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(myfunction,3000);
+		}
+	</script>
+</body>
+</html>
