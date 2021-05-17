@@ -158,6 +158,15 @@ h1, h5, h3{
 	font-size: 18px;
 	font-family: sans-serif;
 }
+.resume{
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 250px;
+	color: black;
+	text-align: center;
+}
 @media screen and (max-width: 900px){
 	.about_me{
 		width: 100%;
@@ -184,17 +193,18 @@ h1, h5, h3{
 }
 .project{
 	position: relative;
-	padding: 30px 100px;
+	padding: 30px 6%;
 }
-.bicycle, .hpvc, .engine{
+.bicycle, .hpvc, .engine, .HVAC, .Wheel, .Watch{
 	position: relative;
 	width: 400px;
 	float: left;
-	padding: 0px 20px 20px 0px;
+	padding: 0px 10px 20px 10px;
 }
-.bicycle img, .hpvc img, .engine img{
+
+.bicycle img, .hpvc img, .engine img, .HVAC img, .Wheel img, .Watch img{
 	width: 100%;
-	height: auto;
+	height: 300px;
 	display: block;
 }
 .middle{
@@ -206,7 +216,6 @@ h1, h5, h3{
  	left: 50%;
   	transform: translate(-50%, -50%);
   	-ms-transform: translate(-50%, -50%);
-  	cursor: pointer;
 }
 .middle h2{
 	margin: 0px 0px;
@@ -216,15 +225,20 @@ h1, h5, h3{
 	font-size: 36px;
 	font-weight: 500;
 }
-.bicycle:hover img, .hpvc:hover img, .engine:hover img{
+.bicycle:hover img, .hpvc:hover img, .engine:hover img, .HVAC:hover img, .Watch:hover img{
 	color: white;
 	cursor: pointer;
 	opacity: 0.3;
 }
-.bicycle:hover .middle, .engine:hover .middle{
-	opacity: 1;
+.Wheel:hover img{
+	color: white;
+	opacity: 0.3;
 }
-.hpvc:hover .middle{
+.hpvc:hover .middle, .bicycle:hover .middle, .engine:hover .middle, .HVAC:hover .middle, .Watch:hover .middle{
+	opacity: 1;
+	cursor: pointer;
+}
+.Wheel:hover .middle{
 	opacity: 1;
 }
 #section3 {
