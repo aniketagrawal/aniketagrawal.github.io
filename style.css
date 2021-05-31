@@ -5,6 +5,159 @@ body {
 	margin: 0px 0px;
 	padding: 0px 0px;
 }
+/*Loader start*/
+.loading_box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+.loading{
+	height: 30px;
+	font-size: 20px;
+	font-family: sans-serif;
+	padding: 20px 10px 10px 10px;
+}
+.loader{
+	width: 200px;
+	height: 200px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	display:block;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	border-radius:100%;
+	border:3px solid #5dba9d;
+	position:relative;
+	margin:15px auto;
+  	z-index:1;
+}
+@keyframes car_anim{
+	0% { left: -100%; }
+	100%{ left: 170%; }
+}
+.car{
+	position: relative;
+	width: 157.5px;
+	height: 62px;
+	top: 58px;
+	animation-name: car_anim;
+	animation-duration: 2.4s;
+	animation-iteration-count: infinite;
+}
+.chassis{
+	position: absolute;
+	width: 112.5px;
+	height: 31px;
+	background-color: #c38763;
+	top: 18px;
+	border-radius: 0px 0px 0px 10px;
+}
+.seat{
+	position: absolute;
+	top: 0px;
+	width: 55.5px;
+	height: 18px;
+	background-color: #c38763;
+	left: 32.5px;
+}
+.front{
+	position: absolute;
+	left: 88px;
+	top: 0px;
+	border-top: 18.5px solid transparent;
+	border-left: 24.5px solid #c38763;
+	width: 0px;
+	height: 0px;
+}
+.rear{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-top: 18.5px solid transparent;
+	border-right: 33px solid #c38763;
+	width: 0px;
+	height: 0px;
+}
+.chassis2{
+	position: absolute;
+	background-color: #c38763;
+	width: 45px;
+	height: 21.75px;
+	left: 112.5px;
+	top: 27.5px;
+	border-radius: 0px 0px 5px 0px;
+}
+.hood{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: 112.5px;
+	border-bottom: 10px solid #c38763;
+	border-right: 45px solid transparent;
+	top: 18px;
+}
+.tyre1{
+	position: absolute;
+	top: 36px;
+	left: 27.25px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 6px solid black;
+	background-color: white;
+}
+.tyre2{
+	position: absolute;
+	top: 36px;
+	left: 100px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 6px solid black;
+	background-color: white;
+}
+.win12{
+	position: absolute;
+	top: 3px;
+	width: 21.5px;
+	height: 15.75px;
+	background-color: white;
+	left: 63.5px;
+}
+.win11{
+	position: absolute;
+	left: 85px;
+	top: 3px;
+	border-top: 15.5px solid transparent;
+	border-left: 21.5px solid white;
+	width: 0px;
+	height: 0px;
+}
+.win21{
+	position: absolute;
+	top: 3px;
+	width: 20.5px;
+	height: 15.75px;
+	background-color: white;
+	left: 36.5px;
+}
+.win22{
+	position: absolute;
+	left: 10px;
+	top: 3px;
+	border-top: 15.5px solid transparent;
+	border-right: 27px solid white;
+	width: 0px;
+	height: 0px;
+}
+/*Loader end*/
 .mobhead{
 	padding: 10px 0px 12px 0px;
     font-size: 20px;
@@ -163,7 +316,7 @@ h1, h5, h3{
 	padding: 20px;
 	border-radius: 20px;
 	cursor: pointer;
-	width: 250px;
+	width: 230px;
 	color: black;
 	text-align: center;
 }
@@ -175,6 +328,39 @@ h1, h5, h3{
 		width: 80%;
 		padding: 0px 10%;
 	}
+}
+#skill {
+	position: relative;
+	display: block;
+	top: 3.5vh;
+	margin: 0px 0px;
+	padding: 0px 0px 40px 0px;
+	overflow: hidden;
+	background-color: #f6e5e5;
+	text-align: center;
+}
+#skill h2{
+	text-align: center;
+	font-size: 36px;
+	display: inline-block;
+	font-weight: 500;
+	border-bottom: 1px solid gray;
+}
+#skill ul{
+	display: block;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 30px 0px;
+}
+#skill li{
+	list-style-type: none;
+	background-color: #dfc6ca;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 10px;
+	padding: 7px 12px;
+	font-size: 22px;
+	color: black;
 }
 #work {
 	position: relative;
@@ -193,18 +379,19 @@ h1, h5, h3{
 }
 .project{
 	position: relative;
-	padding: 30px 6%;
+	margin: 0 auto;
+	max-width: 1140px;
 }
 .bicycle, .hpvc, .engine, .HVAC, .Wheel, .Watch{
 	position: relative;
-	width: 400px;
+	width: 360px;
 	float: left;
 	padding: 0px 10px 20px 10px;
 }
 
 .bicycle img, .hpvc img, .engine img, .HVAC img, .Wheel img, .Watch img{
 	width: 100%;
-	height: 300px;
+	height: 270px;
 	display: block;
 }
 .middle{
@@ -240,6 +427,16 @@ h1, h5, h3{
 }
 .Wheel:hover .middle{
 	opacity: 1;
+}
+@media screen and (max-width: 1140px) and (min-width: 760px){
+	.project{
+		max-width: 760px;
+	}
+}
+@media screen and (max-width: 760px){
+	.project{
+		max-width: 380px;
+	}
 }
 #section3 {
 	position: relative;
@@ -301,9 +498,10 @@ input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type=
   	border-radius: 4px;
   	cursor: pointer;
 }
-.arrow img {
-	width: 50px;
-	height: 50px;
+.fa-angle-down{
+	margin: auto;
+	color: black;
+	font-size: 80px;
 }
 .bouncebutton {
 	position: absolute;
@@ -324,7 +522,7 @@ input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type=
 }
 footer{
 	position: relative;
-	bottom: 0;
+	bottom: 0px;
 	margin: 0px 0px;
 	padding: 0px 0px;
 	height: 50px;
@@ -333,20 +531,23 @@ footer{
 	display: block;
 	
 }
-footer a img{
-	margin: 10px 0px;
-	padding: 0px 0px;
-	vertical-align: middle;
+.copyright{
+	float: left;
+	color: white;
+	margin-left: 1%;
 }
-
-.uparrow{
+.fa-chevron-up{
 	position: absolute;
 	left: 50%;
+	vertical-align: middle;
+	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
 }
-
-.uparrow img {
-	transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
+footer .fa{
+	padding: 10px 8px;
+	margin: 0 10px;
+	font-size: 20px;
+	float: right;
 }
 @media screen and (min-width: 600px){
 	.mobhead{
@@ -428,7 +629,7 @@ footer a img{
 	.bicycle{
 		margin: auto;
 	}
-	footer .icon{
-		margin: 0px 10px;
+	footer .fa{
+		margin: 0px 5px;
 	}
 }
