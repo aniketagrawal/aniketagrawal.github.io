@@ -382,14 +382,14 @@ h1, h5, h3{
 	margin: 0 auto;
 	max-width: 1140px;
 }
-.bicycle, .hpvc, .engine, .HVAC, .Wheel, .Watch{
+.bicycle, .hpvc, .engine, .HVAC, .Headphone, .Watch{
 	position: relative;
 	width: 360px;
 	float: left;
 	padding: 0px 10px 20px 10px;
 }
 
-.bicycle img, .hpvc img, .engine img, .HVAC img, .Wheel img, .Watch img{
+.bicycle img, .hpvc img, .engine img, .HVAC img, .Headphone img, .Watch img{
 	width: 100%;
 	height: 270px;
 	display: block;
@@ -417,7 +417,7 @@ h1, h5, h3{
 	cursor: pointer;
 	opacity: 0.3;
 }
-.Wheel:hover img{
+.Headphone:hover img{
 	color: white;
 	opacity: 0.3;
 }
@@ -425,7 +425,7 @@ h1, h5, h3{
 	opacity: 1;
 	cursor: pointer;
 }
-.Wheel:hover .middle{
+.Headphone:hover .middle{
 	opacity: 1;
 }
 @media screen and (max-width: 1140px) and (min-width: 760px){
