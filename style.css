@@ -291,7 +291,7 @@ h1, h5, h3{
 	margin: 0px 0px;
 	padding: 60px 20px;
 	overflow: hidden;
-	background-color: #66ffff;
+	background-color: lightgrey;
 }
 .about_me{
 	width: 35%;
@@ -336,7 +336,7 @@ h1, h5, h3{
 	margin: 0px 0px;
 	padding: 0px 0px 40px 0px;
 	overflow: hidden;
-	background-color: #f6e5e5;
+	background-color: #f8e2e2;
 	text-align: center;
 }
 #skill h2{
@@ -382,14 +382,14 @@ h1, h5, h3{
 	margin: 0 auto;
 	max-width: 1140px;
 }
-.bicycle, .hpvc, .engine, .HVAC, .Headphone, .Watch{
+.hpvc, .HVAC, .project_sub{
 	position: relative;
 	width: 360px;
 	float: left;
 	padding: 0px 10px 20px 10px;
 }
 
-.bicycle img, .hpvc img, .engine img, .HVAC img, .Headphone img, .Watch img{
+.hpvc img, .HVAC img, .project_sub img{
 	width: 100%;
 	height: 270px;
 	display: block;
@@ -412,20 +412,20 @@ h1, h5, h3{
 	font-size: 36px;
 	font-weight: 500;
 }
-.bicycle:hover img, .hpvc:hover img, .engine:hover img, .HVAC:hover img, .Watch:hover img{
+.hpvc:hover img, .HVAC:hover img{
 	color: white;
 	cursor: pointer;
 	opacity: 0.3;
 }
-.Headphone:hover img{
+.project_sub:hover img{
 	color: white;
 	opacity: 0.3;
 }
-.hpvc:hover .middle, .bicycle:hover .middle, .engine:hover .middle, .HVAC:hover .middle, .Watch:hover .middle{
+.hpvc:hover .middle, .HVAC:hover .middle{
 	opacity: 1;
 	cursor: pointer;
 }
-.Headphone:hover .middle{
+.project_sub:hover .middle{
 	opacity: 1;
 }
 @media screen and (max-width: 1140px) and (min-width: 760px){
@@ -443,7 +443,7 @@ h1, h5, h3{
 	top: 3.5vh;
 	margin: 0px 0px;
 	padding: 0px 0px;
-	background-color: #ccf6e7;
+	background-color: #f8e2e2;
 	height: 80vh;
 	min-height: 400px;
 }
